@@ -1,0 +1,28 @@
+{
+  "require": {
+    "predis/predis": "~1.0",
+    "php-amqplib/php-amqplib": "*",
+    "slim/slim": "3.*",
+    "robmorgan/phinx": "0.6.*",
+    "illuminate/database": "~5.1",
+    "tobscure/json-api": "^0.3.0",
+    "Respect/Validation": "1.1.*",
+    "egulias/email-validator": "^2.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "mockery/mockery": "*",
+    "fzaninotto/Faker": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\Controllers\\": "app/controllers/",
+      "App\\Models\\": "app/models/",
+      "App\\Service\\": "app/service/",
+      "App\\": "app/",
+      "App\\Library\\": "app/library/",
+      "Tests\\Seeders\\": "tests/seeders/",
+      "Tests\\Factories\\": "tests/factories/"
+    }
+  }
+}
